@@ -49,11 +49,8 @@ function colorDiv() {
     if (color === "random"){
         this.style.backgroundColor = `hsl(${Math.random() * 360} , 100% , 50%)`;
     }
-    else if (color === "white"){
-        this.style.backgroundColor = color;
-    }
     else{
-        this.style.backgroundColor = "black";
+        this.style.backgroundColor = color;
     }
 }
 
