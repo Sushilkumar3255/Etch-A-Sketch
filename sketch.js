@@ -36,7 +36,7 @@ function getSize() {
     if(input === ""){
         message.innerHTML = "Please provide a number";
     }
-    else if (input < 0 || input > 100){
+    else if (input <= 0 || input > 100){
         message.innerHTML = "Please provide a number between 1 and 100";
     }
     else{
@@ -50,7 +50,7 @@ function colorDiv() {
         this.style.backgroundColor = `hsl(${Math.random() * 360} , 100% , 50%)`;
     }
     else if (color === "white"){
-        this.style.backgroundColor = "white";
+        this.style.backgroundColor = color;
     }
     else{
         this.style.backgroundColor = "black";
