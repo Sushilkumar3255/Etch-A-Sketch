@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>ETCH-A-SKETCH</h1>
+    <div class="header">
+        <h4>Select the size of grid</h4>
+        <button id="popup">Select</button>
+    </div>
+    <p id="text"></p>
+    <div class="board"></div>
+    <div class="footer">
+        <button class="button" onclick="setColor('black')">Black</button>
+        <button class="button" onclick="setColor('white')">White</button>
+        <button class="button random" onclick="setColor('random')">Random</button>
+        <button class="button clear" onclick="resetBoard()">Reset</button>
+    </div>
+    <script src="./sketch.js"></script>
+</body>
+</html>
